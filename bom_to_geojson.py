@@ -6,7 +6,8 @@ bom_urls = {
     "Canungra": "http://www.bom.gov.au/fwo/IDQ60801/IDQ60801.94418.json",
     "Amberley": "http://www.bom.gov.au/fwo/IDQ60801/IDQ60801.94568.json",
     "Greenbank": "http://www.bom.gov.au/fwo/IDQ60801/IDQ60801.94419.json",
-    "Tin Can Bay": "http://www.bom.gov.au/fwo/IDQ60801/IDQ60801.94420.json"
+    "Tin Can Bay": "http://www.bom.gov.au/fwo/IDQ60801/IDQ60801.94420.json",
+    "Brisbane": "http://www.bom.gov.au/fwo/IDQ60801/IDQ60801.94576.json"
 }
 
 # Headers to prevent 403 errors
