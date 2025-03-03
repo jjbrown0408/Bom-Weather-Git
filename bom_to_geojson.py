@@ -1,7 +1,7 @@
 import requests
 import json
 import time
-from datetime import datetime
+from datetime import datetime, timedelta
 
 # Dictionary of BoM station URLs (using HTTP)
 bom_urls = {
@@ -29,12 +29,22 @@ geojson = {
     "features": []
 }
 
-# Function to convert a 14-digit timestamp (YYYYMMDDHHMMSS) to "YYYY-MM-DD HH:MM:SS"
-def convert_timestamp(raw_timestamp):
+def convert_timestamp_to_aest(raw_timestamp):
+    """
+    Convert a 14-digit BoM timestamp (in UTC) to AEST.
+    Input format: "YYYYMMDDHHMMSS" (first 14 characters of the raw timestamp)
+    Output:
+      - human_readable: "YYYY-MM-DD HH:MM:SS" (AEST)
+      - iso_8601:       "YYYY-MM-DDTHH:MM:SS+10:00" (AEST ISO 8601 format)
+    """
     try:
-        dt = datetime.strptime(str(raw_timestamp)[:14], "%Y%m%d%H%M%S")
-        human_readable = dt.strftime("%Y-%m-%d %H:%M:%S")
-        iso_8601 = dt.isoformat() + "Z"  # ISO format with Z for UTC
+        # Parse the raw timestamp as UTC
+        dt_utc = datetime.strptime(str(raw_timestamp)[:14], "%Y%m%d%H%M%S")
+        # Add 10 hours for AEST (UTC+10)
+        dt_aest = dt_utc + timedelta(hours=10)
+        human_readable = dt_aest.strftime("%Y-%m-%d %H:%M:%S")
+        # Create an ISO8601 string with a fixed +10:00 offset
+        iso_8601 = dt_aest.strftime("%Y-%m-%dT%H:%M:%S+10:00")
         return human_readable, iso_8601
     except ValueError:
         print(f"DEBUG: Failed to convert timestamp '{raw_timestamp}'")
@@ -50,7 +60,7 @@ for site_name, url in bom_urls.items():
         print(f"DEBUG: HTTP status code for {site_name} → {response.status_code}")
 
         if not response.text.strip():
-            print(f"WARNING: Empty response for {site_name}. Skipping.")
+            print(f"WARNING: Empty response received for {site_name}. Skipping.")
             continue
 
         try:
@@ -62,7 +72,7 @@ for site_name, url in bom_urls.items():
             continue
 
         if "observations" not in data or "data" not in data["observations"]:
-            print(f"WARNING: 'observations.data' missing for {site_name}. Skipping.")
+            print(f"WARNING: 'observations.data' missing in JSON for {site_name}. Skipping.")
             continue
 
         obs_list = data["observations"]["data"]
@@ -72,12 +82,12 @@ for site_name, url in bom_urls.items():
             print(f"WARNING: No observations found for {site_name}. Skipping.")
             continue
 
-        # Use the last observation as the latest
-        latest_obs = obs_list[-1]
+        # Use the FIRST element as the latest observation (assuming newest → oldest)
+        latest_obs = obs_list[0]
         print(f"DEBUG: Latest observation for {site_name}: {latest_obs}")
 
         raw_ts = latest_obs.get("aifstime_utc")
-        human_date, iso_date = convert_timestamp(raw_ts)
+        human_date, iso_date = convert_timestamp_to_aest(raw_ts)
         print(f"DEBUG: Raw timestamp: {raw_ts} → Human: {human_date}, ISO: {iso_date}")
 
         if human_date is None or iso_date is None:
@@ -88,7 +98,6 @@ for site_name, url in bom_urls.items():
         lon = latest_obs.get("lon")
         print(f"DEBUG: Coordinates for {site_name}: lat={lat}, lon={lon}")
 
-        # Create GeoJSON feature with an extra property "build_timestamp" to force a file change each run
         feature = {
             "type": "Feature",
             "geometry": {
@@ -97,8 +106,8 @@ for site_name, url in bom_urls.items():
             },
             "properties": {
                 "station": site_name,
-                "timestamp": human_date,
-                "timestamp_date": iso_date,
+                "timestamp": human_date,      # human-readable (AEST)
+                "timestamp_date": iso_date,   # ISO 8601 in AEST
                 "rainfall_mm": float(latest_obs.get("rain_trace", 0)),
                 "humidity_%": latest_obs.get("rel_hum"),
                 "dew_point_C": latest_obs.get("dewpt"),
@@ -107,7 +116,7 @@ for site_name, url in bom_urls.items():
                 "wind_dir": latest_obs.get("wind_dir"),
                 "wind_speed_kmh": latest_obs.get("wind_spd_kmh"),
                 "wind_gust_kmh": latest_obs.get("wind_gust_kmh"),
-                "build_timestamp": time.time()  # forces a new commit on each run
+                "build_timestamp": time.time()  # forces new commit each run
             }
         }
 
@@ -121,7 +130,6 @@ for site_name, url in bom_urls.items():
 
 print(f"DEBUG: Finished processing all sites. Total features = {len(geojson['features'])}\n")
 
-# Save the final GeoJSON to file
 output_file = "bom_weather.geojson"
 try:
     with open(output_file, "w", encoding="utf-8") as f:
