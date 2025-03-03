@@ -1,32 +1,46 @@
-name: Update BoM Weather Data
+name: Automate BoM Weather Updates
 
 on:
   schedule:
     - cron: '*/30 * * * *'  # Runs every 30 minutes
-  workflow_dispatch:  # Allows manual triggering
+  workflow_dispatch:         # Allows manual triggering
 
 jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      # 1. Check out the repository code
+      - uses: actions/checkout@v3
+        with:
+          persist-credentials: false   # We'll handle our own push credentials
+          fetch-depth: 0              # Ensures we have full repo history
 
+      # 2. Set up Python
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
 
+      # 3. Install Python dependencies
       - name: Install dependencies
         run: pip install requests
 
+      # 4. Run the Python script
       - name: Run Python script
         run: python bom_to_geojson.py
 
-      - name: Commit and push changes
+      # 5. Commit changes (only if there's a diff)
+      - name: Commit changed files
         run: |
-          git config --global user.name "GitHub Action"
-          git config --global user.email "github-actions@github.com"
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
           git add bom_weather.geojson
-          git commit -m "Updated BoM weather data" || echo "No changes to commit"
-          git push
+          # Commit only if there are changes
+          git diff --cached --quiet || git commit -m "Updated BoM weather data"
+
+      # 6. Push changes using a dedicated action
+      - name: Push changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
