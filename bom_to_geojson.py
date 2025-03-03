@@ -1,5 +1,6 @@
 import requests
 import json
+import time
 from datetime import datetime
 
 # Dictionary of BoM station URLs (using HTTP)
@@ -28,34 +29,28 @@ geojson = {
     "features": []
 }
 
-# Function to convert a 14-digit timestamp (YYYYMMDDHHMMSS) to "YYYY-MM-DD HH:MM:SS" and ISO 8601
+# Function to convert a 14-digit timestamp (YYYYMMDDHHMMSS) to "YYYY-MM-DD HH:MM:SS"
 def convert_timestamp(raw_timestamp):
-    """
-    Returns a tuple: (human_readable_string, iso_datetime_string)
-    Example: ("2025-02-28 05:00:00", "2025-02-28T05:00:00Z")
-    """
     try:
         dt = datetime.strptime(str(raw_timestamp)[:14], "%Y%m%d%H%M%S")
         human_readable = dt.strftime("%Y-%m-%d %H:%M:%S")
-        # Append 'Z' to indicate UTC; ArcGIS often treats that as a Date/Time field
-        iso_8601 = dt.isoformat() + "Z"
+        iso_8601 = dt.isoformat() + "Z"  # ISO format with Z for UTC
         return human_readable, iso_8601
     except ValueError:
         print(f"DEBUG: Failed to convert timestamp '{raw_timestamp}'")
         return None, None
 
-print("DEBUG: Starting BoM JSON fetch & GeoJSON creation...")
+print("DEBUG: Starting BoM JSON fetch & GeoJSON creation...\n")
 
 # Process each station
 for site_name, url in bom_urls.items():
-    print(f"\nDEBUG: Processing site '{site_name}' with URL: {url}")
+    print(f"DEBUG: Processing site '{site_name}' with URL: {url}")
     try:
         response = requests.get(url, headers=HEADERS, timeout=30)
         print(f"DEBUG: HTTP status code for {site_name} → {response.status_code}")
 
-        # Check if response body is empty
         if not response.text.strip():
-            print(f"WARNING: Empty response received for {site_name}. Skipping.")
+            print(f"WARNING: Empty response for {site_name}. Skipping.")
             continue
 
         try:
@@ -66,9 +61,8 @@ for site_name, url in bom_urls.items():
             print(f"DEBUG: Response text for {site_name}: {snippet}")
             continue
 
-        # Check JSON structure
         if "observations" not in data or "data" not in data["observations"]:
-            print(f"WARNING: 'observations.data' missing in JSON for {site_name}. Skipping.")
+            print(f"WARNING: 'observations.data' missing for {site_name}. Skipping.")
             continue
 
         obs_list = data["observations"]["data"]
@@ -82,22 +76,19 @@ for site_name, url in bom_urls.items():
         latest_obs = obs_list[-1]
         print(f"DEBUG: Latest observation for {site_name}: {latest_obs}")
 
-        # Convert the timestamp from "aifstime_utc"
         raw_ts = latest_obs.get("aifstime_utc")
         human_date, iso_date = convert_timestamp(raw_ts)
-        print(f"DEBUG: Raw timestamp: {raw_ts} → human: {human_date}, iso: {iso_date}")
+        print(f"DEBUG: Raw timestamp: {raw_ts} → Human: {human_date}, ISO: {iso_date}")
 
-        # If conversion failed, skip
         if human_date is None or iso_date is None:
-            print(f"❌ Could not parse timestamp for {site_name}, skipping.")
+            print(f"❌ Error: Timestamp conversion failed for {site_name}. Skipping.")
             continue
 
-        # Get coordinates
         lat = latest_obs.get("lat")
         lon = latest_obs.get("lon")
         print(f"DEBUG: Coordinates for {site_name}: lat={lat}, lon={lon}")
 
-        # Create GeoJSON feature
+        # Create GeoJSON feature with an extra property "build_timestamp" to force a file change each run
         feature = {
             "type": "Feature",
             "geometry": {
@@ -106,8 +97,8 @@ for site_name, url in bom_urls.items():
             },
             "properties": {
                 "station": site_name,
-                "timestamp": human_date,    # human-readable
-                "timestamp_date": iso_date, # ISO 8601 (ArcGIS-friendly)
+                "timestamp": human_date,
+                "timestamp_date": iso_date,
                 "rainfall_mm": float(latest_obs.get("rain_trace", 0)),
                 "humidity_%": latest_obs.get("rel_hum"),
                 "dew_point_C": latest_obs.get("dewpt"),
@@ -115,24 +106,26 @@ for site_name, url in bom_urls.items():
                 "feels_like_C": latest_obs.get("apparent_t"),
                 "wind_dir": latest_obs.get("wind_dir"),
                 "wind_speed_kmh": latest_obs.get("wind_spd_kmh"),
-                "wind_gust_kmh": latest_obs.get("wind_gust_kmh")
+                "wind_gust_kmh": latest_obs.get("wind_gust_kmh"),
+                "build_timestamp": time.time()  # forces a new commit on each run
             }
         }
+
         geojson["features"].append(feature)
-        print(f"✅ Successfully added feature for {site_name}")
+        print(f"✅ Successfully added feature for {site_name}\n")
 
     except requests.exceptions.RequestException as e:
         print(f"❌ Error fetching data for {site_name}: {e}")
     except Exception as ex:
         print(f"❌ Unexpected error for {site_name}: {ex}")
 
-print(f"\nDEBUG: Finished processing all sites. Total features = {len(geojson['features'])}")
+print(f"DEBUG: Finished processing all sites. Total features = {len(geojson['features'])}\n")
 
 # Save the final GeoJSON to file
 output_file = "bom_weather.geojson"
 try:
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump(geojson, f, indent=4)
-    print(f"✅ GeoJSON file saved to '{output_file}'")
+    print(f"✅ GeoJSON file saved to '{output_file}'\n")
 except Exception as ex:
     print(f"❌ Error writing GeoJSON file: {ex}")
