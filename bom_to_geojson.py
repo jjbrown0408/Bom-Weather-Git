@@ -17,10 +17,10 @@ geojson = {
     "features": []
 }
 
-# Function to convert timestamp to ISO 8601 format (YYYY-MM-DD HH:MM:SS)
+# Function to convert a 14-digit timestamp to "YYYY-MM-DD HH:MM:SS"
 def convert_timestamp(raw_timestamp):
     try:
-        # Convert YYYYMMDDHHMMSSSS to YYYY-MM-DD HH:MM:SS
+        # raw_timestamp is assumed to be 14 characters long (e.g., "20250303133000")
         dt = datetime.strptime(str(raw_timestamp)[:14], "%Y%m%d%H%M%S")
         return dt.strftime("%Y-%m-%d %H:%M:%S")
     except ValueError:
@@ -33,10 +33,10 @@ for site_name, url in bom_urls.items():
         response.raise_for_status()
         data = response.json()
 
-        # Extract the latest observation
+        # Extract the latest observation (assuming the last item is the most recent)
         latest_obs = data["observations"]["data"][-1]
 
-        # Convert timestamp
+        # Convert the timestamp from "aifstime_utc"
         formatted_date = convert_timestamp(latest_obs["aifstime_utc"])
 
         # Create GeoJSON feature
@@ -47,26 +47,26 @@ for site_name, url in bom_urls.items():
                 "coordinates": [latest_obs["lon"], latest_obs["lat"]]
             },
             "properties": {
-                "site": site_name,
-                "timestamp": formatted_date,  # ✅ Now in a proper date format!
-                "rainfall_mm": latest_obs.get("rain_trace", None),
-                "humidity": latest_obs.get("rel_hum", None),
-                "dew_point": latest_obs.get("dewpt", None),
-                "air_temp": latest_obs.get("air_temp", None),
-                "feels_like_temp": latest_obs.get("apparent_t", None),
-                "wind_dir": latest_obs.get("wind_dir", None),
-                "wind_speed_kmh": latest_obs.get("wind_spd_kmh", None),
-                "wind_gust_kmh": latest_obs.get("wind_gust_kmh", None)
+                "station": site_name,
+                "timestamp": formatted_date,  # Now in "YYYY-MM-DD HH:MM:SS" format
+                "rainfall_mm": float(latest_obs.get("rain_trace", 0)),
+                "humidity_%": latest_obs.get("rel_hum"),
+                "dew_point_C": latest_obs.get("dewpt"),
+                "air_temp_C": latest_obs.get("air_temp"),
+                "feels_like_C": latest_obs.get("apparent_t"),
+                "wind_dir": latest_obs.get("wind_dir"),
+                "wind_speed_kmh": latest_obs.get("wind_spd_kmh"),
+                "wind_gust_kmh": latest_obs.get("wind_gust_kmh")
             }
         }
-
-        # Add feature to GeoJSON
         geojson["features"].append(feature)
+
+        print(f"✅ Data added for {site_name}")
 
     except requests.exceptions.RequestException as e:
         print(f"❌ Error fetching data for {site_name}: {e}")
 
-# Save as GeoJSON
+# Save the final GeoJSON to file
 with open("bom_weather.geojson", "w", encoding="utf-8") as f:
     json.dump(geojson, f, indent=4)
 
