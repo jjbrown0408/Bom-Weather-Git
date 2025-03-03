@@ -2,7 +2,7 @@ import requests
 import json
 from datetime import datetime
 
-# Dictionary of BoM station URLs
+# Dictionary of BoM station URLs (using HTTP)
 bom_urls = {
     "Canungra": "http://www.bom.gov.au/fwo/IDQ60801/IDQ60801.94418.json",
     "Amberley": "http://www.bom.gov.au/fwo/IDQ60801/IDQ60801.94568.json",
@@ -11,16 +11,27 @@ bom_urls = {
     "Brisbane": "http://www.bom.gov.au/fwo/IDQ60801/IDQ60801.94576.json"
 }
 
+# Headers to avoid 403 errors (using a realistic User-Agent and a Referer)
+HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/91.0.4472.124 Safari/537.36"
+    ),
+    "Accept": "application/json",
+    "Referer": "http://www.bom.gov.au/"
+}
+
 # Initialize GeoJSON structure
 geojson = {
     "type": "FeatureCollection",
     "features": []
 }
 
-# Function to convert a 14-digit timestamp to "YYYY-MM-DD HH:MM:SS"
+# Function to convert a 14-digit timestamp (YYYYMMDDHHMMSS) to "YYYY-MM-DD HH:MM:SS"
 def convert_timestamp(raw_timestamp):
     try:
-        # raw_timestamp is assumed to be 14 characters long (e.g., "20250303133000")
+        # Expecting raw_timestamp to be at least 14 characters long (e.g., "20250303133000")
         dt = datetime.strptime(str(raw_timestamp)[:14], "%Y%m%d%H%M%S")
         return dt.strftime("%Y-%m-%d %H:%M:%S")
     except ValueError:
@@ -29,47 +40,53 @@ def convert_timestamp(raw_timestamp):
 
 print("DEBUG: Starting BoM JSON fetch & GeoJSON creation...")
 
+# Process each station
 for site_name, url in bom_urls.items():
     print(f"\nDEBUG: Processing site '{site_name}' with URL: {url}")
     try:
-        # 1. Fetch data
-        response = requests.get(url)
+        response = requests.get(url, headers=HEADERS, timeout=30)
         print(f"DEBUG: HTTP status code for {site_name} → {response.status_code}")
 
-        response.raise_for_status()  # Will throw an exception if status >= 400
-        data = response.json()
-
-        # 2. Basic checks on data structure
-        if "observations" not in data:
-            print(f"WARNING: 'observations' key missing in JSON for {site_name}")
+        # Check if response body is empty
+        if not response.text.strip():
+            print(f"WARNING: Empty response received for {site_name}. Skipping.")
             continue
 
-        if "data" not in data["observations"]:
-            print(f"WARNING: 'data' key missing under 'observations' for {site_name}")
+        try:
+            data = response.json()
+        except json.JSONDecodeError as jde:
+            print(f"❌ JSON decode error for {site_name}: {jde}")
+            snippet = response.text[:500] + ("... [truncated]" if len(response.text) > 500 else "")
+            print(f"DEBUG: Response text for {site_name}: {snippet}")
+            continue
+
+        # Check JSON structure
+        if "observations" not in data or "data" not in data["observations"]:
+            print(f"WARNING: 'observations.data' missing in JSON for {site_name}. Skipping.")
             continue
 
         obs_list = data["observations"]["data"]
         print(f"DEBUG: {site_name} has {len(obs_list)} observations")
 
         if not obs_list:
-            print(f"WARNING: No observations found for {site_name}, skipping...")
+            print(f"WARNING: No observations found for {site_name}. Skipping.")
             continue
 
-        # 3. Take the last observation as "latest"
+        # Use the last observation as the latest
         latest_obs = obs_list[-1]
-        print(f"DEBUG: Latest observation snippet for {site_name}: {latest_obs}")
+        print(f"DEBUG: Latest observation for {site_name}: {latest_obs}")
 
-        # 4. Convert the timestamp
+        # Convert the timestamp from "aifstime_utc"
         raw_ts = latest_obs.get("aifstime_utc")
         formatted_date = convert_timestamp(raw_ts)
-        print(f"DEBUG: Original timestamp: {raw_ts} → Converted: {formatted_date}")
+        print(f"DEBUG: Raw timestamp: {raw_ts} → Formatted: {formatted_date}")
 
-        # 5. Extract lat/lon
+        # Get coordinates
         lat = latest_obs.get("lat")
         lon = latest_obs.get("lon")
         print(f"DEBUG: Coordinates for {site_name}: lat={lat}, lon={lon}")
 
-        # 6. Create GeoJSON feature
+        # Create GeoJSON feature
         feature = {
             "type": "Feature",
             "geometry": {
@@ -90,24 +107,20 @@ for site_name, url in bom_urls.items():
             }
         }
         geojson["features"].append(feature)
-
         print(f"✅ Successfully added feature for {site_name}")
 
     except requests.exceptions.RequestException as e:
         print(f"❌ Error fetching data for {site_name}: {e}")
-    except KeyError as ke:
-        print(f"❌ KeyError for {site_name}: Missing key {ke}")
     except Exception as ex:
         print(f"❌ Unexpected error for {site_name}: {ex}")
 
-# 7. After processing all stations, print how many features we have
-num_features = len(geojson["features"])
-print(f"\nDEBUG: Finished processing all sites. Total features = {num_features}")
+print(f"\nDEBUG: Finished processing all sites. Total features = {len(geojson['features'])}")
 
-# 8. Save the final GeoJSON to file
+# Save the final GeoJSON to file
+output_file = "bom_weather.geojson"
 try:
-    with open("bom_weather.geojson", "w", encoding="utf-8") as f:
+    with open(output_file, "w", encoding="utf-8") as f:
         json.dump(geojson, f, indent=4)
-    print("✅ GeoJSON file updated successfully!")
+    print(f"✅ GeoJSON file saved to '{output_file}'")
 except Exception as ex:
-    print(f"❌ Error writing bom_weather.geojson: {ex}")
+    print(f"❌ Error writing GeoJSON file: {ex}")
