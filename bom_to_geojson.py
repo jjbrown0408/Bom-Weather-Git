@@ -24,31 +24,61 @@ def convert_timestamp(raw_timestamp):
         dt = datetime.strptime(str(raw_timestamp)[:14], "%Y%m%d%H%M%S")
         return dt.strftime("%Y-%m-%d %H:%M:%S")
     except ValueError:
+        print(f"DEBUG: Failed to convert timestamp '{raw_timestamp}'")
         return None
 
-# Process each weather station
+print("DEBUG: Starting BoM JSON fetch & GeoJSON creation...")
+
 for site_name, url in bom_urls.items():
+    print(f"\nDEBUG: Processing site '{site_name}' with URL: {url}")
     try:
+        # 1. Fetch data
         response = requests.get(url)
-        response.raise_for_status()
+        print(f"DEBUG: HTTP status code for {site_name} → {response.status_code}")
+
+        response.raise_for_status()  # Will throw an exception if status >= 400
         data = response.json()
 
-        # Extract the latest observation (assuming the last item is the most recent)
-        latest_obs = data["observations"]["data"][-1]
+        # 2. Basic checks on data structure
+        if "observations" not in data:
+            print(f"WARNING: 'observations' key missing in JSON for {site_name}")
+            continue
 
-        # Convert the timestamp from "aifstime_utc"
-        formatted_date = convert_timestamp(latest_obs["aifstime_utc"])
+        if "data" not in data["observations"]:
+            print(f"WARNING: 'data' key missing under 'observations' for {site_name}")
+            continue
 
-        # Create GeoJSON feature
+        obs_list = data["observations"]["data"]
+        print(f"DEBUG: {site_name} has {len(obs_list)} observations")
+
+        if not obs_list:
+            print(f"WARNING: No observations found for {site_name}, skipping...")
+            continue
+
+        # 3. Take the last observation as "latest"
+        latest_obs = obs_list[-1]
+        print(f"DEBUG: Latest observation snippet for {site_name}: {latest_obs}")
+
+        # 4. Convert the timestamp
+        raw_ts = latest_obs.get("aifstime_utc")
+        formatted_date = convert_timestamp(raw_ts)
+        print(f"DEBUG: Original timestamp: {raw_ts} → Converted: {formatted_date}")
+
+        # 5. Extract lat/lon
+        lat = latest_obs.get("lat")
+        lon = latest_obs.get("lon")
+        print(f"DEBUG: Coordinates for {site_name}: lat={lat}, lon={lon}")
+
+        # 6. Create GeoJSON feature
         feature = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [latest_obs["lon"], latest_obs["lat"]]
+                "coordinates": [lon, lat]
             },
             "properties": {
                 "station": site_name,
-                "timestamp": formatted_date,  # Now in "YYYY-MM-DD HH:MM:SS" format
+                "timestamp": formatted_date,
                 "rainfall_mm": float(latest_obs.get("rain_trace", 0)),
                 "humidity_%": latest_obs.get("rel_hum"),
                 "dew_point_C": latest_obs.get("dewpt"),
@@ -61,13 +91,23 @@ for site_name, url in bom_urls.items():
         }
         geojson["features"].append(feature)
 
-        print(f"✅ Data added for {site_name}")
+        print(f"✅ Successfully added feature for {site_name}")
 
     except requests.exceptions.RequestException as e:
         print(f"❌ Error fetching data for {site_name}: {e}")
+    except KeyError as ke:
+        print(f"❌ KeyError for {site_name}: Missing key {ke}")
+    except Exception as ex:
+        print(f"❌ Unexpected error for {site_name}: {ex}")
 
-# Save the final GeoJSON to file
-with open("bom_weather.geojson", "w", encoding="utf-8") as f:
-    json.dump(geojson, f, indent=4)
+# 7. After processing all stations, print how many features we have
+num_features = len(geojson["features"])
+print(f"\nDEBUG: Finished processing all sites. Total features = {num_features}")
 
-print("✅ GeoJSON file updated successfully!")
+# 8. Save the final GeoJSON to file
+try:
+    with open("bom_weather.geojson", "w", encoding="utf-8") as f:
+        json.dump(geojson, f, indent=4)
+    print("✅ GeoJSON file updated successfully!")
+except Exception as ex:
+    print(f"❌ Error writing bom_weather.geojson: {ex}")
