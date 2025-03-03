@@ -28,15 +28,21 @@ geojson = {
     "features": []
 }
 
-# Function to convert a 14-digit timestamp (YYYYMMDDHHMMSS) to "YYYY-MM-DD HH:MM:SS"
+# Function to convert a 14-digit timestamp (YYYYMMDDHHMMSS) to "YYYY-MM-DD HH:MM:SS" and ISO 8601
 def convert_timestamp(raw_timestamp):
+    """
+    Returns a tuple: (human_readable_string, iso_datetime_string)
+    Example: ("2025-02-28 05:00:00", "2025-02-28T05:00:00Z")
+    """
     try:
-        # Expecting raw_timestamp to be at least 14 characters long (e.g., "20250303133000")
         dt = datetime.strptime(str(raw_timestamp)[:14], "%Y%m%d%H%M%S")
-        return dt.strftime("%Y-%m-%d %H:%M:%S")
+        human_readable = dt.strftime("%Y-%m-%d %H:%M:%S")
+        # Append 'Z' to indicate UTC; ArcGIS often treats that as a Date/Time field
+        iso_8601 = dt.isoformat() + "Z"
+        return human_readable, iso_8601
     except ValueError:
         print(f"DEBUG: Failed to convert timestamp '{raw_timestamp}'")
-        return None
+        return None, None
 
 print("DEBUG: Starting BoM JSON fetch & GeoJSON creation...")
 
@@ -78,8 +84,13 @@ for site_name, url in bom_urls.items():
 
         # Convert the timestamp from "aifstime_utc"
         raw_ts = latest_obs.get("aifstime_utc")
-        formatted_date = convert_timestamp(raw_ts)
-        print(f"DEBUG: Raw timestamp: {raw_ts} → Formatted: {formatted_date}")
+        human_date, iso_date = convert_timestamp(raw_ts)
+        print(f"DEBUG: Raw timestamp: {raw_ts} → human: {human_date}, iso: {iso_date}")
+
+        # If conversion failed, skip
+        if human_date is None or iso_date is None:
+            print(f"❌ Could not parse timestamp for {site_name}, skipping.")
+            continue
 
         # Get coordinates
         lat = latest_obs.get("lat")
@@ -95,7 +106,8 @@ for site_name, url in bom_urls.items():
             },
             "properties": {
                 "station": site_name,
-                "timestamp": formatted_date,
+                "timestamp": human_date,    # human-readable
+                "timestamp_date": iso_date, # ISO 8601 (ArcGIS-friendly)
                 "rainfall_mm": float(latest_obs.get("rain_trace", 0)),
                 "humidity_%": latest_obs.get("rel_hum"),
                 "dew_point_C": latest_obs.get("dewpt"),
