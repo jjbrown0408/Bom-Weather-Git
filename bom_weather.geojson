@@ -12,17 +12,17 @@
             },
             "properties": {
                 "station": "Canungra",
-                "timestamp": "2025-03-21 07:00:00",
-                "timestamp_date": "2025-03-21T07:00:00+10:00",
+                "timestamp": "2025-03-21 07:30:00",
+                "timestamp_date": "2025-03-21T07:30:00+10:00",
                 "rainfall_mm": 0.6,
-                "humidity_%": 99,
-                "dew_point_C": 16.9,
-                "air_temp_C": 17.1,
-                "feels_like_C": 19.5,
+                "humidity_%": 100,
+                "dew_point_C": 19.4,
+                "air_temp_C": 19.4,
+                "feels_like_C": 22.8,
                 "wind_dir": "CALM",
                 "wind_speed_kmh": 0,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1742506100.3507333
+                "build_timestamp": 1742506803.7421055
             }
         },
         {
@@ -46,7 +46,7 @@
                 "wind_dir": "SSW",
                 "wind_speed_kmh": 7,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1742506100.712178
+                "build_timestamp": 1742506804.1607163
             }
         },
         {
@@ -60,17 +60,17 @@
             },
             "properties": {
                 "station": "Greenbank",
-                "timestamp": "2025-03-21 07:00:00",
-                "timestamp_date": "2025-03-21T07:00:00+10:00",
+                "timestamp": "2025-03-21 07:30:00",
+                "timestamp_date": "2025-03-21T07:30:00+10:00",
                 "rainfall_mm": 4.4,
-                "humidity_%": 100,
-                "dew_point_C": 20.4,
-                "air_temp_C": 20.4,
-                "feels_like_C": 24.3,
-                "wind_dir": "CALM",
-                "wind_speed_kmh": 0,
+                "humidity_%": 95,
+                "dew_point_C": 20.9,
+                "air_temp_C": 21.7,
+                "feels_like_C": 25.5,
+                "wind_dir": "SW",
+                "wind_speed_kmh": 2,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1742506100.9453888
+                "build_timestamp": 1742506804.791651
             }
         },
         {
@@ -84,17 +84,17 @@
             },
             "properties": {
                 "station": "Tin Can Bay",
-                "timestamp": "2025-03-21 07:00:00",
-                "timestamp_date": "2025-03-21T07:00:00+10:00",
+                "timestamp": "2025-03-21 07:30:00",
+                "timestamp_date": "2025-03-21T07:30:00+10:00",
                 "rainfall_mm": 0.6,
-                "humidity_%": 93,
-                "dew_point_C": 21.4,
-                "air_temp_C": 22.6,
-                "feels_like_C": 25.9,
+                "humidity_%": 89,
+                "dew_point_C": 21.8,
+                "air_temp_C": 23.7,
+                "feels_like_C": 27.2,
                 "wind_dir": "S",
                 "wind_speed_kmh": 6,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1742506101.3563542
+                "build_timestamp": 1742506805.0169706
             }
         },
         {
@@ -108,17 +108,17 @@
             },
             "properties": {
                 "station": "Brisbane",
-                "timestamp": "2025-03-21 07:00:00",
-                "timestamp_date": "2025-03-21T07:00:00+10:00",
+                "timestamp": "2025-03-21 07:30:00",
+                "timestamp_date": "2025-03-21T07:30:00+10:00",
                 "rainfall_mm": 11.6,
-                "humidity_%": 92,
-                "dew_point_C": 20.4,
-                "air_temp_C": 21.8,
-                "feels_like_C": 25.0,
-                "wind_dir": "SW",
+                "humidity_%": 88,
+                "dew_point_C": 20.7,
+                "air_temp_C": 22.8,
+                "feels_like_C": 26.1,
+                "wind_dir": "SSW",
                 "wind_speed_kmh": 4,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1742506101.9808064
+                "build_timestamp": 1742506805.2626486
             }
         }
     ]
