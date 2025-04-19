@@ -12,8 +12,8 @@
             },
             "properties": {
                 "station": "Canungra",
-                "timestamp": "2025-04-20 00:00:00",
-                "timestamp_date": "2025-04-20T00:00:00+10:00",
+                "timestamp": "2025-04-20 00:30:00",
+                "timestamp_date": "2025-04-20T00:30:00+10:00",
                 "rainfall_mm": 0.0,
                 "humidity_%": 99,
                 "dew_point_C": 15.0,
@@ -22,7 +22,7 @@
                 "wind_dir": "CALM",
                 "wind_speed_kmh": 0,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1745071947.0695217
+                "build_timestamp": 1745073447.3681867
             }
         },
         {
@@ -36,17 +36,17 @@
             },
             "properties": {
                 "station": "Amberley",
-                "timestamp": "2025-04-20 00:00:00",
-                "timestamp_date": "2025-04-20T00:00:00+10:00",
+                "timestamp": "2025-04-20 00:30:00",
+                "timestamp_date": "2025-04-20T00:30:00+10:00",
                 "rainfall_mm": 0.0,
                 "humidity_%": 97,
-                "dew_point_C": 16.4,
-                "air_temp_C": 16.9,
-                "feels_like_C": 17.7,
+                "dew_point_C": 16.0,
+                "air_temp_C": 16.5,
+                "feels_like_C": 16.8,
                 "wind_dir": "E",
-                "wind_speed_kmh": 7,
+                "wind_speed_kmh": 9,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1745071947.720505
+                "build_timestamp": 1745073447.6756704
             }
         },
         {
@@ -60,17 +60,17 @@
             },
             "properties": {
                 "station": "Greenbank",
-                "timestamp": "2025-04-20 00:00:00",
-                "timestamp_date": "2025-04-20T00:00:00+10:00",
+                "timestamp": "2025-04-20 00:30:00",
+                "timestamp_date": "2025-04-20T00:30:00+10:00",
                 "rainfall_mm": 0.0,
                 "humidity_%": 100,
-                "dew_point_C": 17.4,
-                "air_temp_C": 17.4,
-                "feels_like_C": 20.0,
+                "dew_point_C": 17.2,
+                "air_temp_C": 17.2,
+                "feels_like_C": 19.7,
                 "wind_dir": "CALM",
                 "wind_speed_kmh": 0,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1745071948.3563697
+                "build_timestamp": 1745073447.872189
             }
         },
         {
@@ -84,17 +84,17 @@
             },
             "properties": {
                 "station": "Tin Can Bay",
-                "timestamp": "2025-04-20 00:00:00",
-                "timestamp_date": "2025-04-20T00:00:00+10:00",
+                "timestamp": "2025-04-20 00:30:00",
+                "timestamp_date": "2025-04-20T00:30:00+10:00",
                 "rainfall_mm": 0.0,
                 "humidity_%": 95,
-                "dew_point_C": 17.2,
-                "air_temp_C": 18.0,
-                "feels_like_C": 20.5,
+                "dew_point_C": 16.7,
+                "air_temp_C": 17.5,
+                "feels_like_C": 19.8,
                 "wind_dir": "CALM",
                 "wind_speed_kmh": 0,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1745071949.1042268
+                "build_timestamp": 1745073448.3514965
             }
         },
         {
@@ -108,17 +108,17 @@
             },
             "properties": {
                 "station": "Brisbane",
-                "timestamp": "2025-04-20 00:00:00",
-                "timestamp_date": "2025-04-20T00:00:00+10:00",
+                "timestamp": "2025-04-20 00:30:00",
+                "timestamp_date": "2025-04-20T00:30:00+10:00",
                 "rainfall_mm": 0.0,
                 "humidity_%": 83,
-                "dew_point_C": 18.7,
-                "air_temp_C": 21.7,
-                "feels_like_C": 24.4,
-                "wind_dir": "N",
-                "wind_speed_kmh": 2,
+                "dew_point_C": 18.3,
+                "air_temp_C": 21.3,
+                "feels_like_C": 24.2,
+                "wind_dir": "CALM",
+                "wind_speed_kmh": 0,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1745071949.979426
+                "build_timestamp": 1745073448.7022662
             }
         }
     ]
