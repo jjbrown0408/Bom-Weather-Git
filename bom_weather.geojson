@@ -12,17 +12,17 @@
             },
             "properties": {
                 "station": "Canungra",
-                "timestamp": "2025-04-23 09:00:00",
-                "timestamp_date": "2025-04-23T09:00:00+10:00",
+                "timestamp": "2025-04-23 09:30:00",
+                "timestamp_date": "2025-04-23T09:30:00+10:00",
                 "rainfall_mm": 0.0,
-                "humidity_%": 86,
-                "dew_point_C": 15.9,
-                "air_temp_C": 18.3,
-                "feels_like_C": 20.3,
-                "wind_dir": "CALM",
-                "wind_speed_kmh": 0,
+                "humidity_%": 75,
+                "dew_point_C": 16.2,
+                "air_temp_C": 20.8,
+                "feels_like_C": 22.5,
+                "wind_dir": "NE",
+                "wind_speed_kmh": 2,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1745363613.7594507
+                "build_timestamp": 1745365028.192959
             }
         },
         {
@@ -46,7 +46,7 @@
                 "wind_dir": "NNE",
                 "wind_speed_kmh": 6,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1745363614.1803966
+                "build_timestamp": 1745365028.8522384
             }
         },
         {
@@ -60,17 +60,17 @@
             },
             "properties": {
                 "station": "Greenbank",
-                "timestamp": "2025-04-23 09:00:00",
-                "timestamp_date": "2025-04-23T09:00:00+10:00",
+                "timestamp": "2025-04-23 09:30:00",
+                "timestamp_date": "2025-04-23T09:30:00+10:00",
                 "rainfall_mm": 0.0,
-                "humidity_%": 66,
-                "dew_point_C": 14.4,
-                "air_temp_C": 21.0,
-                "feels_like_C": 20.3,
+                "humidity_%": 64,
+                "dew_point_C": 15.0,
+                "air_temp_C": 22.1,
+                "feels_like_C": 22.0,
                 "wind_dir": "SSW",
-                "wind_speed_kmh": 11,
+                "wind_speed_kmh": 9,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1745363614.8737974
+                "build_timestamp": 1745365029.2755551
             }
         },
         {
@@ -84,17 +84,17 @@
             },
             "properties": {
                 "station": "Tin Can Bay",
-                "timestamp": "2025-04-23 09:00:00",
-                "timestamp_date": "2025-04-23T09:00:00+10:00",
+                "timestamp": "2025-04-23 09:30:00",
+                "timestamp_date": "2025-04-23T09:30:00+10:00",
                 "rainfall_mm": 0.0,
                 "humidity_%": 56,
-                "dew_point_C": 13.2,
-                "air_temp_C": 22.4,
-                "feels_like_C": 22.1,
+                "dew_point_C": 13.7,
+                "air_temp_C": 22.7,
+                "feels_like_C": 22.2,
                 "wind_dir": "SSE",
-                "wind_speed_kmh": 7,
+                "wind_speed_kmh": 9,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1745363615.2038624
+                "build_timestamp": 1745365029.8311155
             }
         },
         {
@@ -108,17 +108,17 @@
             },
             "properties": {
                 "station": "Brisbane",
-                "timestamp": "2025-04-23 09:00:00",
-                "timestamp_date": "2025-04-23T09:00:00+10:00",
+                "timestamp": "2025-04-23 09:30:00",
+                "timestamp_date": "2025-04-23T09:30:00+10:00",
                 "rainfall_mm": 0.0,
-                "humidity_%": 65,
-                "dew_point_C": 14.2,
-                "air_temp_C": 21.0,
-                "feels_like_C": 21.0,
+                "humidity_%": 63,
+                "dew_point_C": 14.8,
+                "air_temp_C": 22.2,
+                "feels_like_C": 22.4,
                 "wind_dir": "SW",
                 "wind_speed_kmh": 7,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1745363615.372249
+                "build_timestamp": 1745365030.149097
             }
         }
     ]
