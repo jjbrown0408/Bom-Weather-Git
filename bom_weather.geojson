@@ -12,17 +12,17 @@
             },
             "properties": {
                 "station": "Canungra",
-                "timestamp": "2025-05-20 09:00:00",
-                "timestamp_date": "2025-05-20T09:00:00+10:00",
+                "timestamp": "2025-05-20 09:30:00",
+                "timestamp_date": "2025-05-20T09:30:00+10:00",
                 "rainfall_mm": 0.0,
-                "humidity_%": 100,
-                "dew_point_C": 14.5,
-                "air_temp_C": 14.5,
-                "feels_like_C": 15.9,
-                "wind_dir": "CALM",
-                "wind_speed_kmh": 0,
+                "humidity_%": 84,
+                "dew_point_C": 14.7,
+                "air_temp_C": 17.4,
+                "feels_like_C": 18.2,
+                "wind_dir": "N",
+                "wind_speed_kmh": 4,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1747696417.7593472
+                "build_timestamp": 1747697822.7506745
             }
         },
         {
@@ -46,7 +46,7 @@
                 "wind_dir": "SSW",
                 "wind_speed_kmh": 7,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1747696417.9945042
+                "build_timestamp": 1747697823.450248
             }
         },
         {
@@ -60,17 +60,17 @@
             },
             "properties": {
                 "station": "Greenbank",
-                "timestamp": "2025-05-20 09:00:00",
-                "timestamp_date": "2025-05-20T09:00:00+10:00",
+                "timestamp": "2025-05-20 09:30:00",
+                "timestamp_date": "2025-05-20T09:30:00+10:00",
                 "rainfall_mm": 0.0,
-                "humidity_%": 80,
-                "dew_point_C": 13.9,
-                "air_temp_C": 17.4,
-                "feels_like_C": 17.9,
-                "wind_dir": "WSW",
+                "humidity_%": 69,
+                "dew_point_C": 13.4,
+                "air_temp_C": 19.2,
+                "feels_like_C": 19.5,
+                "wind_dir": "SSW",
                 "wind_speed_kmh": 4,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1747696418.237008
+                "build_timestamp": 1747697824.1191187
             }
         },
         {
@@ -84,17 +84,17 @@
             },
             "properties": {
                 "station": "Tin Can Bay",
-                "timestamp": "2025-05-20 09:00:00",
-                "timestamp_date": "2025-05-20T09:00:00+10:00",
+                "timestamp": "2025-05-20 09:30:00",
+                "timestamp_date": "2025-05-20T09:30:00+10:00",
                 "rainfall_mm": 0.0,
-                "humidity_%": 68,
-                "dew_point_C": 13.7,
-                "air_temp_C": 19.8,
-                "feels_like_C": 18.5,
+                "humidity_%": 69,
+                "dew_point_C": 14.4,
+                "air_temp_C": 20.3,
+                "feels_like_C": 19.2,
                 "wind_dir": "SSE",
                 "wind_speed_kmh": 13,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1747696418.6918585
+                "build_timestamp": 1747697824.4957342
             }
         },
         {
@@ -108,17 +108,17 @@
             },
             "properties": {
                 "station": "Brisbane",
-                "timestamp": "2025-05-20 09:00:00",
-                "timestamp_date": "2025-05-20T09:00:00+10:00",
+                "timestamp": "2025-05-20 09:30:00",
+                "timestamp_date": "2025-05-20T09:30:00+10:00",
                 "rainfall_mm": 0.0,
                 "humidity_%": 66,
-                "dew_point_C": 12.0,
-                "air_temp_C": 18.5,
-                "feels_like_C": 17.8,
-                "wind_dir": "SW",
-                "wind_speed_kmh": 7,
+                "dew_point_C": 12.5,
+                "air_temp_C": 19.0,
+                "feels_like_C": 18.1,
+                "wind_dir": "WSW",
+                "wind_speed_kmh": 9,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1747696418.930909
+                "build_timestamp": 1747697825.2140527
             }
         }
     ]
