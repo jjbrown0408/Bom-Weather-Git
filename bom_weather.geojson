@@ -12,17 +12,17 @@
             },
             "properties": {
                 "station": "Canungra",
-                "timestamp": "2025-06-26 06:00:00",
-                "timestamp_date": "2025-06-26T06:00:00+10:00",
+                "timestamp": "2025-06-26 06:30:00",
+                "timestamp_date": "2025-06-26T06:30:00+10:00",
                 "rainfall_mm": 0.0,
-                "humidity_%": 89,
-                "dew_point_C": 6.4,
-                "air_temp_C": 8.1,
-                "feels_like_C": 7.3,
-                "wind_dir": "CALM",
-                "wind_speed_kmh": 0,
+                "humidity_%": 91,
+                "dew_point_C": 6.0,
+                "air_temp_C": 7.4,
+                "feels_like_C": 6.1,
+                "wind_dir": "SSE",
+                "wind_speed_kmh": 2,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1750882622.311459
+                "build_timestamp": 1750884145.6731744
             }
         },
         {
@@ -46,7 +46,7 @@
                 "wind_dir": "E",
                 "wind_speed_kmh": 6,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1750882622.7430036
+                "build_timestamp": 1750884146.0262392
             }
         },
         {
@@ -60,17 +60,17 @@
             },
             "properties": {
                 "station": "Greenbank",
-                "timestamp": "2025-06-26 06:00:00",
-                "timestamp_date": "2025-06-26T06:00:00+10:00",
+                "timestamp": "2025-06-26 06:30:00",
+                "timestamp_date": "2025-06-26T06:30:00+10:00",
                 "rainfall_mm": 0.0,
                 "humidity_%": 99,
-                "dew_point_C": 4.1,
-                "air_temp_C": 4.2,
-                "feels_like_C": 2.9,
-                "wind_dir": "CALM",
-                "wind_speed_kmh": 0,
+                "dew_point_C": 4.2,
+                "air_temp_C": 4.3,
+                "feels_like_C": 2.6,
+                "wind_dir": "SSE",
+                "wind_speed_kmh": 2,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1750882623.3162818
+                "build_timestamp": 1750884146.3739722
             }
         },
         {
@@ -84,17 +84,17 @@
             },
             "properties": {
                 "station": "Tin Can Bay",
-                "timestamp": "2025-06-26 06:00:00",
-                "timestamp_date": "2025-06-26T06:00:00+10:00",
+                "timestamp": "2025-06-26 06:30:00",
+                "timestamp_date": "2025-06-26T06:30:00+10:00",
                 "rainfall_mm": 0.0,
                 "humidity_%": 91,
-                "dew_point_C": 5.0,
-                "air_temp_C": 6.4,
-                "feels_like_C": 4.9,
+                "dew_point_C": 5.2,
+                "air_temp_C": 6.6,
+                "feels_like_C": 4.8,
                 "wind_dir": "WSW",
-                "wind_speed_kmh": 2,
+                "wind_speed_kmh": 4,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1750882623.7905066
+                "build_timestamp": 1750884146.716325
             }
         },
         {
@@ -108,17 +108,17 @@
             },
             "properties": {
                 "station": "Brisbane",
-                "timestamp": "2025-06-26 06:00:00",
-                "timestamp_date": "2025-06-26T06:00:00+10:00",
+                "timestamp": "2025-06-26 06:30:00",
+                "timestamp_date": "2025-06-26T06:30:00+10:00",
                 "rainfall_mm": 0.0,
-                "humidity_%": 83,
-                "dew_point_C": 5.8,
-                "air_temp_C": 8.5,
-                "feels_like_C": 7.2,
-                "wind_dir": "SE",
+                "humidity_%": 86,
+                "dew_point_C": 5.4,
+                "air_temp_C": 7.6,
+                "feels_like_C": 6.2,
+                "wind_dir": "SSE",
                 "wind_speed_kmh": 2,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1750882624.116125
+                "build_timestamp": 1750884147.0625691
             }
         }
     ]
