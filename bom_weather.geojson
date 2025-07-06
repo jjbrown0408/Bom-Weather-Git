@@ -12,17 +12,17 @@
             },
             "properties": {
                 "station": "Canungra",
-                "timestamp": "2025-07-07 06:00:00",
-                "timestamp_date": "2025-07-07T06:00:00+10:00",
+                "timestamp": "2025-07-07 06:30:00",
+                "timestamp_date": "2025-07-07T06:30:00+10:00",
                 "rainfall_mm": 0.4,
                 "humidity_%": 100,
-                "dew_point_C": 12.1,
-                "air_temp_C": 12.1,
-                "feels_like_C": 12.4,
-                "wind_dir": "E",
-                "wind_speed_kmh": 2,
+                "dew_point_C": 12.2,
+                "air_temp_C": 12.2,
+                "feels_like_C": 12.9,
+                "wind_dir": "CALM",
+                "wind_speed_kmh": 0,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1751832956.013536
+                "build_timestamp": 1751834403.2412095
             }
         },
         {
@@ -46,7 +46,7 @@
                 "wind_dir": "NNW",
                 "wind_speed_kmh": 7,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1751832956.362935
+                "build_timestamp": 1751834403.4693017
             }
         },
         {
@@ -60,17 +60,17 @@
             },
             "properties": {
                 "station": "Greenbank",
-                "timestamp": "2025-07-07 06:00:00",
-                "timestamp_date": "2025-07-07T06:00:00+10:00",
+                "timestamp": "2025-07-07 06:30:00",
+                "timestamp_date": "2025-07-07T06:30:00+10:00",
                 "rainfall_mm": 8.0,
                 "humidity_%": 100,
-                "dew_point_C": 13.8,
-                "air_temp_C": 13.8,
-                "feels_like_C": 15.0,
-                "wind_dir": "CALM",
-                "wind_speed_kmh": 0,
+                "dew_point_C": 14.8,
+                "air_temp_C": 14.8,
+                "feels_like_C": 15.2,
+                "wind_dir": "W",
+                "wind_speed_kmh": 6,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1751832956.8201284
+                "build_timestamp": 1751834403.6599522
             }
         },
         {
@@ -84,17 +84,17 @@
             },
             "properties": {
                 "station": "Tin Can Bay",
-                "timestamp": "2025-07-07 06:00:00",
-                "timestamp_date": "2025-07-07T06:00:00+10:00",
+                "timestamp": "2025-07-07 06:30:00",
+                "timestamp_date": "2025-07-07T06:30:00+10:00",
                 "rainfall_mm": 0.2,
                 "humidity_%": 98,
-                "dew_point_C": 11.6,
-                "air_temp_C": 11.9,
-                "feels_like_C": 12.4,
+                "dew_point_C": 11.9,
+                "air_temp_C": 12.2,
+                "feels_like_C": 12.8,
                 "wind_dir": "CALM",
                 "wind_speed_kmh": 0,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1751832957.2666066
+                "build_timestamp": 1751834403.8562424
             }
         },
         {
@@ -108,17 +108,17 @@
             },
             "properties": {
                 "station": "Brisbane",
-                "timestamp": "2025-07-07 06:00:00",
-                "timestamp_date": "2025-07-07T06:00:00+10:00",
+                "timestamp": "2025-07-07 06:30:00",
+                "timestamp_date": "2025-07-07T06:30:00+10:00",
                 "rainfall_mm": 5.8,
-                "humidity_%": 96,
-                "dew_point_C": 14.8,
-                "air_temp_C": 15.4,
-                "feels_like_C": 17.0,
-                "wind_dir": "CALM",
-                "wind_speed_kmh": 0,
+                "humidity_%": 91,
+                "dew_point_C": 14.7,
+                "air_temp_C": 16.2,
+                "feels_like_C": 16.6,
+                "wind_dir": "W",
+                "wind_speed_kmh": 6,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1751832957.8460891
+                "build_timestamp": 1751834404.182894
             }
         }
     ]
