@@ -12,17 +12,17 @@
             },
             "properties": {
                 "station": "Canungra",
-                "timestamp": "2025-07-07 15:00:00",
-                "timestamp_date": "2025-07-07T15:00:00+10:00",
+                "timestamp": "2025-07-07 15:30:00",
+                "timestamp_date": "2025-07-07T15:30:00+10:00",
                 "rainfall_mm": 0.0,
-                "humidity_%": 33,
-                "dew_point_C": 4.7,
-                "air_temp_C": 21.6,
-                "feels_like_C": 20.0,
-                "wind_dir": "S",
-                "wind_speed_kmh": 2,
+                "humidity_%": 30,
+                "dew_point_C": 3.0,
+                "air_temp_C": 21.3,
+                "feels_like_C": 18.5,
+                "wind_dir": "WNW",
+                "wind_speed_kmh": 7,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1751865517.80897
+                "build_timestamp": 1751867053.558974
             }
         },
         {
@@ -46,7 +46,7 @@
                 "wind_dir": "W",
                 "wind_speed_kmh": 20,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1751865517.981016
+                "build_timestamp": 1751867053.7899997
             }
         },
         {
@@ -60,17 +60,17 @@
             },
             "properties": {
                 "station": "Greenbank",
-                "timestamp": "2025-07-07 15:00:00",
-                "timestamp_date": "2025-07-07T15:00:00+10:00",
+                "timestamp": "2025-07-07 15:30:00",
+                "timestamp_date": "2025-07-07T15:30:00+10:00",
                 "rainfall_mm": 0.0,
                 "humidity_%": 32,
-                "dew_point_C": 4.0,
-                "air_temp_C": 21.4,
-                "feels_like_C": 17.6,
+                "dew_point_C": 3.8,
+                "air_temp_C": 21.1,
+                "feels_like_C": 18.0,
                 "wind_dir": "WNW",
-                "wind_speed_kmh": 13,
+                "wind_speed_kmh": 9,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1751865518.258517
+                "build_timestamp": 1751867053.9542413
             }
         },
         {
@@ -84,17 +84,17 @@
             },
             "properties": {
                 "station": "Tin Can Bay",
-                "timestamp": "2025-07-07 15:00:00",
-                "timestamp_date": "2025-07-07T15:00:00+10:00",
+                "timestamp": "2025-07-07 15:30:00",
+                "timestamp_date": "2025-07-07T15:30:00+10:00",
                 "rainfall_mm": 0.0,
-                "humidity_%": 48,
-                "dew_point_C": 9.9,
-                "air_temp_C": 21.4,
-                "feels_like_C": 20.3,
-                "wind_dir": "WNW",
-                "wind_speed_kmh": 6,
+                "humidity_%": 46,
+                "dew_point_C": 10.1,
+                "air_temp_C": 22.3,
+                "feels_like_C": 21.6,
+                "wind_dir": "NW",
+                "wind_speed_kmh": 4,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1751865518.5865085
+                "build_timestamp": 1751867054.144894
             }
         },
         {
@@ -108,17 +108,17 @@
             },
             "properties": {
                 "station": "Brisbane",
-                "timestamp": "2025-07-07 15:00:00",
-                "timestamp_date": "2025-07-07T15:00:00+10:00",
+                "timestamp": "2025-07-07 15:30:00",
+                "timestamp_date": "2025-07-07T15:30:00+10:00",
                 "rainfall_mm": 0.2,
-                "humidity_%": 33,
-                "dew_point_C": 4.5,
-                "air_temp_C": 21.4,
+                "humidity_%": 35,
+                "dew_point_C": 5.2,
+                "air_temp_C": 21.3,
                 "feels_like_C": 18.5,
-                "wind_dir": "WNW",
+                "wind_dir": "W",
                 "wind_speed_kmh": 9,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1751865518.7534626
+                "build_timestamp": 1751867054.468331
             }
         }
     ]
