@@ -12,17 +12,17 @@
             },
             "properties": {
                 "station": "Canungra",
-                "timestamp": "2025-07-24 06:00:00",
-                "timestamp_date": "2025-07-24T06:00:00+10:00",
+                "timestamp": "2025-07-24 06:30:00",
+                "timestamp_date": "2025-07-24T06:30:00+10:00",
                 "rainfall_mm": 18.2,
                 "humidity_%": 99,
-                "dew_point_C": 7.6,
-                "air_temp_C": 7.7,
-                "feels_like_C": 7.1,
+                "dew_point_C": 6.9,
+                "air_temp_C": 7.0,
+                "feels_like_C": 6.3,
                 "wind_dir": "CALM",
                 "wind_speed_kmh": 0,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1753301871.9942718
+                "build_timestamp": 1753303448.8445904
             }
         },
         {
@@ -46,7 +46,7 @@
                 "wind_dir": "NW",
                 "wind_speed_kmh": 9,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1753301872.5771718
+                "build_timestamp": 1753303449.254289
             }
         },
         {
@@ -60,17 +60,17 @@
             },
             "properties": {
                 "station": "Greenbank",
-                "timestamp": "2025-07-24 06:00:00",
-                "timestamp_date": "2025-07-24T06:00:00+10:00",
+                "timestamp": "2025-07-24 06:30:00",
+                "timestamp_date": "2025-07-24T06:30:00+10:00",
                 "rainfall_mm": 28.6,
                 "humidity_%": 99,
-                "dew_point_C": 7.6,
-                "air_temp_C": 7.7,
-                "feels_like_C": 6.8,
-                "wind_dir": "SSE",
-                "wind_speed_kmh": 2,
+                "dew_point_C": 7.1,
+                "air_temp_C": 7.2,
+                "feels_like_C": 6.5,
+                "wind_dir": "CALM",
+                "wind_speed_kmh": 0,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1753301872.8937516
+                "build_timestamp": 1753303449.6186523
             }
         },
         {
@@ -84,17 +84,17 @@
             },
             "properties": {
                 "station": "Tin Can Bay",
-                "timestamp": "2025-07-24 06:00:00",
-                "timestamp_date": "2025-07-24T06:00:00+10:00",
+                "timestamp": "2025-07-24 06:30:00",
+                "timestamp_date": "2025-07-24T06:30:00+10:00",
                 "rainfall_mm": 1.4,
-                "humidity_%": 76,
-                "dew_point_C": 9.3,
-                "air_temp_C": 13.4,
-                "feels_like_C": 12.9,
-                "wind_dir": "SSW",
-                "wind_speed_kmh": 2,
+                "humidity_%": 73,
+                "dew_point_C": 8.2,
+                "air_temp_C": 12.9,
+                "feels_like_C": 11.7,
+                "wind_dir": "SW",
+                "wind_speed_kmh": 4,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1753301873.1945057
+                "build_timestamp": 1753303450.1989481
             }
         },
         {
@@ -108,17 +108,17 @@
             },
             "properties": {
                 "station": "Brisbane",
-                "timestamp": "2025-07-24 06:00:00",
-                "timestamp_date": "2025-07-24T06:00:00+10:00",
+                "timestamp": "2025-07-24 06:30:00",
+                "timestamp_date": "2025-07-24T06:30:00+10:00",
                 "rainfall_mm": 12.6,
-                "humidity_%": 69,
+                "humidity_%": 72,
                 "dew_point_C": 6.0,
-                "air_temp_C": 11.5,
-                "feels_like_C": 9.4,
-                "wind_dir": "SW",
-                "wind_speed_kmh": 6,
+                "air_temp_C": 10.8,
+                "feels_like_C": 9.1,
+                "wind_dir": "SSW",
+                "wind_speed_kmh": 4,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1753301873.3926272
+                "build_timestamp": 1753303450.5772731
             }
         }
     ]
