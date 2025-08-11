@@ -22,7 +22,31 @@
                 "wind_dir": "CALM",
                 "wind_speed_kmh": 0,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1754946874.8864553
+                "build_timestamp": 1754948255.5604026
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    152.7,
+                    -27.6
+                ]
+            },
+            "properties": {
+                "station": "Amberley",
+                "timestamp": "2025-08-12 07:00:00",
+                "timestamp_date": "2025-08-12T07:00:00+10:00",
+                "rainfall_mm": 0.2,
+                "humidity_%": 100,
+                "dew_point_C": 5.5,
+                "air_temp_C": 5.5,
+                "feels_like_C": 3.2,
+                "wind_dir": "NW",
+                "wind_speed_kmh": 7,
+                "wind_gust_kmh": null,
+                "build_timestamp": 1754948255.930113
             }
         },
         {
@@ -46,7 +70,7 @@
                 "wind_dir": "CALM",
                 "wind_speed_kmh": 0,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1754946875.457633
+                "build_timestamp": 1754948256.2007506
             }
         },
         {
@@ -70,7 +94,7 @@
                 "wind_dir": "S",
                 "wind_speed_kmh": 6,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1754946875.7342055
+                "build_timestamp": 1754948256.575787
             }
         },
         {
@@ -94,7 +118,7 @@
                 "wind_dir": "WSW",
                 "wind_speed_kmh": 4,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1754946875.897863
+                "build_timestamp": 1754948256.9573345
             }
         }
     ]
