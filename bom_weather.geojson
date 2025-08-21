@@ -12,17 +12,17 @@
             },
             "properties": {
                 "station": "Canungra",
-                "timestamp": "2025-08-21 18:00:00",
-                "timestamp_date": "2025-08-21T18:00:00+10:00",
+                "timestamp": "2025-08-21 18:30:00",
+                "timestamp_date": "2025-08-21T18:30:00+10:00",
                 "rainfall_mm": 0.6,
-                "humidity_%": 96,
-                "dew_point_C": 15.1,
+                "humidity_%": 97,
+                "dew_point_C": 15.2,
                 "air_temp_C": 15.7,
                 "feels_like_C": 17.4,
                 "wind_dir": "CALM",
                 "wind_speed_kmh": 0,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1755764385.741789
+                "build_timestamp": 1755765915.9730809
             }
         },
         {
@@ -46,7 +46,7 @@
                 "wind_dir": "E",
                 "wind_speed_kmh": 7,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1755764386.1119435
+                "build_timestamp": 1755765916.1511822
             }
         },
         {
@@ -60,17 +60,17 @@
             },
             "properties": {
                 "station": "Greenbank",
-                "timestamp": "2025-08-21 18:00:00",
-                "timestamp_date": "2025-08-21T18:00:00+10:00",
+                "timestamp": "2025-08-21 18:30:00",
+                "timestamp_date": "2025-08-21T18:30:00+10:00",
                 "rainfall_mm": 1.6,
-                "humidity_%": 95,
-                "dew_point_C": 16.0,
-                "air_temp_C": 16.8,
-                "feels_like_C": 18.8,
+                "humidity_%": 98,
+                "dew_point_C": 16.1,
+                "air_temp_C": 16.4,
+                "feels_like_C": 18.4,
                 "wind_dir": "CALM",
                 "wind_speed_kmh": 0,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1755764386.4472399
+                "build_timestamp": 1755765916.3268752
             }
         },
         {
@@ -84,17 +84,17 @@
             },
             "properties": {
                 "station": "Tin Can Bay",
-                "timestamp": "2025-08-21 18:00:00",
-                "timestamp_date": "2025-08-21T18:00:00+10:00",
+                "timestamp": "2025-08-21 18:30:00",
+                "timestamp_date": "2025-08-21T18:30:00+10:00",
                 "rainfall_mm": 1.0,
-                "humidity_%": 82,
+                "humidity_%": 83,
                 "dew_point_C": 15.5,
-                "air_temp_C": 18.6,
-                "feels_like_C": 19.7,
+                "air_temp_C": 18.4,
+                "feels_like_C": 19.5,
                 "wind_dir": "NNE",
                 "wind_speed_kmh": 4,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1755764386.9833848
+                "build_timestamp": 1755765916.4964838
             }
         },
         {
@@ -108,17 +108,17 @@
             },
             "properties": {
                 "station": "Brisbane",
-                "timestamp": "2025-08-21 18:00:00",
-                "timestamp_date": "2025-08-21T18:00:00+10:00",
+                "timestamp": "2025-08-21 18:30:00",
+                "timestamp_date": "2025-08-21T18:30:00+10:00",
                 "rainfall_mm": 6.8,
-                "humidity_%": 92,
-                "dew_point_C": 16.3,
-                "air_temp_C": 17.6,
-                "feels_like_C": 19.0,
-                "wind_dir": "ENE",
-                "wind_speed_kmh": 4,
+                "humidity_%": 93,
+                "dew_point_C": 16.4,
+                "air_temp_C": 17.5,
+                "feels_like_C": 19.7,
+                "wind_dir": "CALM",
+                "wind_speed_kmh": 0,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1755764387.6640215
+                "build_timestamp": 1755765916.6720872
             }
         }
     ]
