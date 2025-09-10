@@ -12,17 +12,17 @@
             },
             "properties": {
                 "station": "Canungra",
-                "timestamp": "2025-09-10 20:30:00",
-                "timestamp_date": "2025-09-10T20:30:00+10:00",
+                "timestamp": "2025-09-10 21:00:00",
+                "timestamp_date": "2025-09-10T21:00:00+10:00",
                 "rainfall_mm": 0.0,
                 "humidity_%": 98,
-                "dew_point_C": 15.0,
-                "air_temp_C": 15.3,
-                "feels_like_C": 16.9,
-                "wind_dir": "CALM",
-                "wind_speed_kmh": 0,
+                "dew_point_C": 14.9,
+                "air_temp_C": 15.2,
+                "feels_like_C": 16.0,
+                "wind_dir": "SE",
+                "wind_speed_kmh": 4,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1757500777.6938934
+                "build_timestamp": 1757502687.7498465
             }
         },
         {
@@ -36,17 +36,17 @@
             },
             "properties": {
                 "station": "Amberley",
-                "timestamp": "2025-09-10 20:30:00",
-                "timestamp_date": "2025-09-10T20:30:00+10:00",
+                "timestamp": "2025-09-10 21:00:00",
+                "timestamp_date": "2025-09-10T21:00:00+10:00",
                 "rainfall_mm": 0.0,
-                "humidity_%": 84,
-                "dew_point_C": 15.0,
-                "air_temp_C": 17.7,
-                "feels_like_C": 19.3,
-                "wind_dir": "CALM",
-                "wind_speed_kmh": 0,
+                "humidity_%": 87,
+                "dew_point_C": 15.3,
+                "air_temp_C": 17.5,
+                "feels_like_C": 17.9,
+                "wind_dir": "WSW",
+                "wind_speed_kmh": 7,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1757500777.8917592
+                "build_timestamp": 1757502687.9133031
             }
         },
         {
@@ -60,17 +60,17 @@
             },
             "properties": {
                 "station": "Greenbank",
-                "timestamp": "2025-09-10 20:30:00",
-                "timestamp_date": "2025-09-10T20:30:00+10:00",
+                "timestamp": "2025-09-10 21:00:00",
+                "timestamp_date": "2025-09-10T21:00:00+10:00",
                 "rainfall_mm": 0.0,
                 "humidity_%": 94,
-                "dew_point_C": 16.5,
-                "air_temp_C": 17.5,
-                "feels_like_C": 19.7,
+                "dew_point_C": 16.2,
+                "air_temp_C": 17.2,
+                "feels_like_C": 19.3,
                 "wind_dir": "CALM",
                 "wind_speed_kmh": 0,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1757500778.0641992
+                "build_timestamp": 1757502688.091201
             }
         },
         {
@@ -94,7 +94,7 @@
                 "wind_dir": "NNW",
                 "wind_speed_kmh": 9,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1757500778.337514
+                "build_timestamp": 1757502688.266921
             }
         },
         {
@@ -108,17 +108,17 @@
             },
             "properties": {
                 "station": "Brisbane",
-                "timestamp": "2025-09-10 20:30:00",
-                "timestamp_date": "2025-09-10T20:30:00+10:00",
+                "timestamp": "2025-09-10 21:00:00",
+                "timestamp_date": "2025-09-10T21:00:00+10:00",
                 "rainfall_mm": 0.0,
                 "humidity_%": 82,
-                "dew_point_C": 17.5,
-                "air_temp_C": 20.7,
-                "feels_like_C": 22.9,
-                "wind_dir": "NNE",
-                "wind_speed_kmh": 2,
+                "dew_point_C": 17.4,
+                "air_temp_C": 20.6,
+                "feels_like_C": 22.4,
+                "wind_dir": "N",
+                "wind_speed_kmh": 4,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1757500778.5352645
+                "build_timestamp": 1757502688.449986
             }
         }
     ]
