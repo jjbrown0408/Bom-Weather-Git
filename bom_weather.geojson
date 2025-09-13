@@ -12,17 +12,17 @@
             },
             "properties": {
                 "station": "Canungra",
-                "timestamp": "2025-09-13 12:00:00",
-                "timestamp_date": "2025-09-13T12:00:00+10:00",
+                "timestamp": "2025-09-13 13:00:00",
+                "timestamp_date": "2025-09-13T13:00:00+10:00",
                 "rainfall_mm": 4.8,
-                "humidity_%": 94,
-                "dew_point_C": 16.4,
-                "air_temp_C": 17.4,
-                "feels_like_C": 18.8,
-                "wind_dir": "S",
-                "wind_speed_kmh": 4,
+                "humidity_%": 70,
+                "dew_point_C": 13.8,
+                "air_temp_C": 19.4,
+                "feels_like_C": 18.9,
+                "wind_dir": "E",
+                "wind_speed_kmh": 9,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1757730657.8397815
+                "build_timestamp": 1757733428.6444108
             }
         },
         {
@@ -36,17 +36,17 @@
             },
             "properties": {
                 "station": "Amberley",
-                "timestamp": "2025-09-13 12:00:00",
-                "timestamp_date": "2025-09-13T12:00:00+10:00",
+                "timestamp": "2025-09-13 13:00:00",
+                "timestamp_date": "2025-09-13T13:00:00+10:00",
                 "rainfall_mm": 0.0,
-                "humidity_%": 62,
-                "dew_point_C": 13.4,
-                "air_temp_C": 21.0,
-                "feels_like_C": 20.4,
-                "wind_dir": "SSW",
-                "wind_speed_kmh": 9,
+                "humidity_%": 51,
+                "dew_point_C": 12.0,
+                "air_temp_C": 22.6,
+                "feels_like_C": 20.0,
+                "wind_dir": "E",
+                "wind_speed_kmh": 17,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1757730658.358602
+                "build_timestamp": 1757733429.0475907
             }
         },
         {
@@ -60,17 +60,17 @@
             },
             "properties": {
                 "station": "Greenbank",
-                "timestamp": "2025-09-13 12:00:00",
-                "timestamp_date": "2025-09-13T12:00:00+10:00",
+                "timestamp": "2025-09-13 13:00:00",
+                "timestamp_date": "2025-09-13T13:00:00+10:00",
                 "rainfall_mm": 0.0,
-                "humidity_%": 57,
-                "dew_point_C": 12.5,
-                "air_temp_C": 21.4,
-                "feels_like_C": 20.9,
+                "humidity_%": 59,
+                "dew_point_C": 12.3,
+                "air_temp_C": 20.6,
+                "feels_like_C": 20.0,
                 "wind_dir": "ENE",
                 "wind_speed_kmh": 7,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1757730658.9408374
+                "build_timestamp": 1757733429.5108466
             }
         },
         {
@@ -84,17 +84,17 @@
             },
             "properties": {
                 "station": "Tin Can Bay",
-                "timestamp": "2025-09-13 12:00:00",
-                "timestamp_date": "2025-09-13T12:00:00+10:00",
-                "rainfall_mm": 0.0,
-                "humidity_%": 64,
-                "dew_point_C": 13.6,
-                "air_temp_C": 20.6,
-                "feels_like_C": 19.7,
-                "wind_dir": "SE",
-                "wind_speed_kmh": 11,
+                "timestamp": "2025-09-13 13:00:00",
+                "timestamp_date": "2025-09-13T13:00:00+10:00",
+                "rainfall_mm": 0.2,
+                "humidity_%": 80,
+                "dew_point_C": 14.5,
+                "air_temp_C": 18.0,
+                "feels_like_C": 18.1,
+                "wind_dir": "ESE",
+                "wind_speed_kmh": 7,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1757730659.5098288
+                "build_timestamp": 1757733429.9030151
             }
         },
         {
@@ -108,17 +108,17 @@
             },
             "properties": {
                 "station": "Brisbane",
-                "timestamp": "2025-09-13 12:00:00",
-                "timestamp_date": "2025-09-13T12:00:00+10:00",
+                "timestamp": "2025-09-13 13:00:00",
+                "timestamp_date": "2025-09-13T13:00:00+10:00",
                 "rainfall_mm": 0.6,
-                "humidity_%": 75,
-                "dew_point_C": 15.0,
-                "air_temp_C": 19.5,
-                "feels_like_C": 20.0,
-                "wind_dir": "NNE",
-                "wind_speed_kmh": 6,
+                "humidity_%": 65,
+                "dew_point_C": 13.3,
+                "air_temp_C": 20.1,
+                "feels_like_C": 19.4,
+                "wind_dir": "NE",
+                "wind_speed_kmh": 9,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1757730659.8826895
+                "build_timestamp": 1757733430.2985625
             }
         }
     ]
