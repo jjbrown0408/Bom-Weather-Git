@@ -12,17 +12,17 @@
             },
             "properties": {
                 "station": "Canungra",
-                "timestamp": "2025-11-06 19:00:00",
-                "timestamp_date": "2025-11-06T19:00:00+10:00",
+                "timestamp": "2025-11-06 19:30:00",
+                "timestamp_date": "2025-11-06T19:30:00+10:00",
                 "rainfall_mm": 0.0,
-                "humidity_%": 79,
-                "dew_point_C": 14.6,
-                "air_temp_C": 18.3,
-                "feels_like_C": 19.4,
-                "wind_dir": "SE",
-                "wind_speed_kmh": 2,
+                "humidity_%": 84,
+                "dew_point_C": 14.4,
+                "air_temp_C": 17.1,
+                "feels_like_C": 18.5,
+                "wind_dir": "CALM",
+                "wind_speed_kmh": 0,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1762420632.8247333
+                "build_timestamp": 1762422057.4158359
             }
         },
         {
@@ -46,7 +46,7 @@
                 "wind_dir": "E",
                 "wind_speed_kmh": 17,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1762420633.3247557
+                "build_timestamp": 1762422057.6987185
             }
         },
         {
@@ -60,17 +60,17 @@
             },
             "properties": {
                 "station": "Greenbank",
-                "timestamp": "2025-11-06 19:00:00",
-                "timestamp_date": "2025-11-06T19:00:00+10:00",
+                "timestamp": "2025-11-06 19:30:00",
+                "timestamp_date": "2025-11-06T19:30:00+10:00",
                 "rainfall_mm": 0.0,
-                "humidity_%": 65,
-                "dew_point_C": 14.4,
-                "air_temp_C": 21.2,
-                "feels_like_C": 21.5,
+                "humidity_%": 68,
+                "dew_point_C": 14.5,
+                "air_temp_C": 20.6,
+                "feels_like_C": 21.7,
                 "wind_dir": "E",
-                "wind_speed_kmh": 6,
+                "wind_speed_kmh": 2,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1762420633.8492966
+                "build_timestamp": 1762422057.9418237
             }
         },
         {
@@ -84,17 +84,17 @@
             },
             "properties": {
                 "station": "Tin Can Bay",
-                "timestamp": "2025-11-06 19:00:00",
-                "timestamp_date": "2025-11-06T19:00:00+10:00",
+                "timestamp": "2025-11-06 19:30:00",
+                "timestamp_date": "2025-11-06T19:30:00+10:00",
                 "rainfall_mm": 0.0,
-                "humidity_%": 66,
-                "dew_point_C": 14.6,
-                "air_temp_C": 21.2,
-                "feels_like_C": 21.9,
+                "humidity_%": 67,
+                "dew_point_C": 14.5,
+                "air_temp_C": 20.8,
+                "feels_like_C": 21.5,
                 "wind_dir": "ESE",
                 "wind_speed_kmh": 4,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1762420634.3112373
+                "build_timestamp": 1762422058.1660833
             }
         },
         {
@@ -108,17 +108,17 @@
             },
             "properties": {
                 "station": "Brisbane",
-                "timestamp": "2025-11-06 19:00:00",
-                "timestamp_date": "2025-11-06T19:00:00+10:00",
+                "timestamp": "2025-11-06 19:30:00",
+                "timestamp_date": "2025-11-06T19:30:00+10:00",
                 "rainfall_mm": 0.0,
-                "humidity_%": 62,
+                "humidity_%": 63,
                 "dew_point_C": 14.2,
-                "air_temp_C": 21.8,
-                "feels_like_C": 21.8,
+                "air_temp_C": 21.5,
+                "feels_like_C": 21.7,
                 "wind_dir": "E",
-                "wind_speed_kmh": 7,
+                "wind_speed_kmh": 6,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1762420634.7185771
+                "build_timestamp": 1762422058.8305454
             }
         }
     ]
