@@ -12,17 +12,17 @@
             },
             "properties": {
                 "station": "Canungra",
-                "timestamp": "2025-11-15 17:00:00",
-                "timestamp_date": "2025-11-15T17:00:00+10:00",
-                "rainfall_mm": 2.0,
-                "humidity_%": 95,
+                "timestamp": "2025-11-15 17:03:00",
+                "timestamp_date": "2025-11-15T17:03:00+10:00",
+                "rainfall_mm": 2.2,
+                "humidity_%": 96,
                 "dew_point_C": 21.4,
-                "air_temp_C": 22.2,
-                "feels_like_C": 25.5,
-                "wind_dir": "SSW",
+                "air_temp_C": 22.1,
+                "feels_like_C": 25.4,
+                "wind_dir": "S",
                 "wind_speed_kmh": 6,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1763190780.6782002
+                "build_timestamp": 1763192072.7718856
             }
         },
         {
@@ -36,17 +36,17 @@
             },
             "properties": {
                 "station": "Amberley",
-                "timestamp": "2025-11-15 17:00:00",
-                "timestamp_date": "2025-11-15T17:00:00+10:00",
-                "rainfall_mm": 18.4,
+                "timestamp": "2025-11-15 17:18:00",
+                "timestamp_date": "2025-11-15T17:18:00+10:00",
+                "rainfall_mm": 21.0,
                 "humidity_%": 93,
-                "dew_point_C": 22.5,
-                "air_temp_C": 23.7,
+                "dew_point_C": 21.9,
+                "air_temp_C": 23.1,
                 "feels_like_C": 24.9,
-                "wind_dir": "NE",
-                "wind_speed_kmh": 20,
+                "wind_dir": "N",
+                "wind_speed_kmh": 15,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1763190781.2074811
+                "build_timestamp": 1763192073.1374848
             }
         },
         {
@@ -70,7 +70,7 @@
                 "wind_dir": "NNE",
                 "wind_speed_kmh": 7,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1763190781.7240937
+                "build_timestamp": 1763192073.578883
             }
         },
         {
@@ -94,7 +94,7 @@
                 "wind_dir": "N",
                 "wind_speed_kmh": 13,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1763190782.0419617
+                "build_timestamp": 1763192073.9773655
             }
         },
         {
@@ -118,7 +118,7 @@
                 "wind_dir": "N",
                 "wind_speed_kmh": 6,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1763190782.3631568
+                "build_timestamp": 1763192074.2854269
             }
         }
     ]
