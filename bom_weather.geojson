@@ -12,17 +12,17 @@
             },
             "properties": {
                 "station": "Canungra",
-                "timestamp": "2026-01-19 06:00:00",
-                "timestamp_date": "2026-01-19T06:00:00+10:00",
+                "timestamp": "2026-01-19 06:30:00",
+                "timestamp_date": "2026-01-19T06:30:00+10:00",
                 "rainfall_mm": 32.6,
                 "humidity_%": 99,
-                "dew_point_C": 18.8,
-                "air_temp_C": 19.0,
-                "feels_like_C": 22.2,
+                "dew_point_C": 19.5,
+                "air_temp_C": 19.7,
+                "feels_like_C": 23.2,
                 "wind_dir": "CALM",
                 "wind_speed_kmh": 0,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1768767462.9934433
+                "build_timestamp": 1768768931.5143695
             }
         },
         {
@@ -46,7 +46,7 @@
                 "wind_dir": "SE",
                 "wind_speed_kmh": 4,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1768767463.4712405
+                "build_timestamp": 1768768932.0325706
             }
         },
         {
@@ -60,17 +60,17 @@
             },
             "properties": {
                 "station": "Greenbank",
-                "timestamp": "2026-01-19 06:00:00",
-                "timestamp_date": "2026-01-19T06:00:00+10:00",
+                "timestamp": "2026-01-19 06:30:00",
+                "timestamp_date": "2026-01-19T06:30:00+10:00",
                 "rainfall_mm": 0.2,
-                "humidity_%": 99,
-                "dew_point_C": 19.7,
-                "air_temp_C": 19.9,
-                "feels_like_C": 23.5,
-                "wind_dir": "CALM",
-                "wind_speed_kmh": 0,
+                "humidity_%": 86,
+                "dew_point_C": 20.0,
+                "air_temp_C": 22.5,
+                "feels_like_C": 25.8,
+                "wind_dir": "S",
+                "wind_speed_kmh": 2,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1768767464.2302148
+                "build_timestamp": 1768768932.4120865
             }
         },
         {
@@ -84,17 +84,17 @@
             },
             "properties": {
                 "station": "Tin Can Bay",
-                "timestamp": "2026-01-19 06:00:00",
-                "timestamp_date": "2026-01-19T06:00:00+10:00",
+                "timestamp": "2026-01-19 06:30:00",
+                "timestamp_date": "2026-01-19T06:30:00+10:00",
                 "rainfall_mm": 5.0,
-                "humidity_%": 77,
-                "dew_point_C": 20.0,
-                "air_temp_C": 24.3,
-                "feels_like_C": 25.9,
+                "humidity_%": 74,
+                "dew_point_C": 20.1,
+                "air_temp_C": 25.1,
+                "feels_like_C": 26.4,
                 "wind_dir": "SE",
-                "wind_speed_kmh": 11,
+                "wind_speed_kmh": 13,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1768767464.8836956
+                "build_timestamp": 1768768932.931992
             }
         },
         {
@@ -108,17 +108,17 @@
             },
             "properties": {
                 "station": "Brisbane",
-                "timestamp": "2026-01-19 06:00:00",
-                "timestamp_date": "2026-01-19T06:00:00+10:00",
+                "timestamp": "2026-01-19 06:30:00",
+                "timestamp_date": "2026-01-19T06:30:00+10:00",
                 "rainfall_mm": 33.2,
-                "humidity_%": 81,
+                "humidity_%": 76,
                 "dew_point_C": 19.3,
-                "air_temp_C": 22.7,
-                "feels_like_C": 24.9,
-                "wind_dir": "SW",
-                "wind_speed_kmh": 6,
+                "air_temp_C": 23.8,
+                "feels_like_C": 25.9,
+                "wind_dir": "SSW",
+                "wind_speed_kmh": 7,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1768767465.347036
+                "build_timestamp": 1768768933.2879279
             }
         }
     ]
