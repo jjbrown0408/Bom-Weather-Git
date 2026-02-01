@@ -12,8 +12,8 @@
             },
             "properties": {
                 "station": "Canungra",
-                "timestamp": "2026-02-02 03:30:00",
-                "timestamp_date": "2026-02-02T03:30:00+10:00",
+                "timestamp": "2026-02-02 04:00:00",
+                "timestamp_date": "2026-02-02T04:00:00+10:00",
                 "rainfall_mm": 0.0,
                 "humidity_%": 97,
                 "dew_point_C": 20.7,
@@ -22,7 +22,7 @@
                 "wind_dir": "CALM",
                 "wind_speed_kmh": 0,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1769968110.8134453
+                "build_timestamp": 1769970458.7752635
             }
         },
         {
@@ -36,17 +36,17 @@
             },
             "properties": {
                 "station": "Amberley",
-                "timestamp": "2026-02-02 03:30:00",
-                "timestamp_date": "2026-02-02T03:30:00+10:00",
+                "timestamp": "2026-02-02 04:00:00",
+                "timestamp_date": "2026-02-02T04:00:00+10:00",
                 "rainfall_mm": 0.0,
-                "humidity_%": 91,
-                "dew_point_C": 22.4,
-                "air_temp_C": 24.0,
-                "feels_like_C": 26.5,
+                "humidity_%": 90,
+                "dew_point_C": 22.5,
+                "air_temp_C": 24.2,
+                "feels_like_C": 27.5,
                 "wind_dir": "SW",
-                "wind_speed_kmh": 13,
+                "wind_speed_kmh": 9,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1769968111.0203006
+                "build_timestamp": 1769970459.2298708
             }
         },
         {
@@ -60,8 +60,8 @@
             },
             "properties": {
                 "station": "Greenbank",
-                "timestamp": "2026-02-02 03:30:00",
-                "timestamp_date": "2026-02-02T03:30:00+10:00",
+                "timestamp": "2026-02-02 04:00:00",
+                "timestamp_date": "2026-02-02T04:00:00+10:00",
                 "rainfall_mm": 0.0,
                 "humidity_%": 94,
                 "dew_point_C": 22.4,
@@ -70,7 +70,7 @@
                 "wind_dir": "CALM",
                 "wind_speed_kmh": 0,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1769968111.2606468
+                "build_timestamp": 1769970459.8150835
             }
         },
         {
@@ -94,7 +94,7 @@
                 "wind_dir": "NE",
                 "wind_speed_kmh": 6,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1769968111.6360428
+                "build_timestamp": 1769970460.2528377
             }
         },
         {
@@ -108,17 +108,17 @@
             },
             "properties": {
                 "station": "Brisbane",
-                "timestamp": "2026-02-02 03:30:00",
-                "timestamp_date": "2026-02-02T03:30:00+10:00",
+                "timestamp": "2026-02-02 04:00:00",
+                "timestamp_date": "2026-02-02T04:00:00+10:00",
                 "rainfall_mm": 0.0,
-                "humidity_%": 85,
-                "dew_point_C": 21.7,
-                "air_temp_C": 24.4,
-                "feels_like_C": 29.0,
-                "wind_dir": "CALM",
-                "wind_speed_kmh": 0,
+                "humidity_%": 87,
+                "dew_point_C": 22.4,
+                "air_temp_C": 24.7,
+                "feels_like_C": 28.9,
+                "wind_dir": "W",
+                "wind_speed_kmh": 4,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1769968111.8815677
+                "build_timestamp": 1769970460.7379792
             }
         }
     ]
