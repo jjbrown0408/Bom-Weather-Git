@@ -12,17 +12,17 @@
             },
             "properties": {
                 "station": "Canungra",
-                "timestamp": "2026-02-03 04:00:00",
-                "timestamp_date": "2026-02-03T04:00:00+10:00",
+                "timestamp": "2026-02-03 09:00:00",
+                "timestamp_date": "2026-02-03T09:00:00+10:00",
                 "rainfall_mm": 0.0,
-                "humidity_%": 69,
-                "dew_point_C": 14.6,
-                "air_temp_C": 20.5,
-                "feels_like_C": 20.3,
+                "humidity_%": 50,
+                "dew_point_C": 12.0,
+                "air_temp_C": 23.0,
+                "feels_like_C": 21.9,
                 "wind_dir": "SSE",
                 "wind_speed_kmh": 9,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1770057359.7773328
+                "build_timestamp": 1770074581.059172
             }
         },
         {
@@ -36,17 +36,17 @@
             },
             "properties": {
                 "station": "Amberley",
-                "timestamp": "2026-02-03 04:00:00",
-                "timestamp_date": "2026-02-03T04:00:00+10:00",
+                "timestamp": "2026-02-03 09:00:00",
+                "timestamp_date": "2026-02-03T09:00:00+10:00",
                 "rainfall_mm": 0.0,
-                "humidity_%": 69,
-                "dew_point_C": 15.3,
-                "air_temp_C": 21.2,
-                "feels_like_C": 19.7,
+                "humidity_%": 54,
+                "dew_point_C": 14.2,
+                "air_temp_C": 24.1,
+                "feels_like_C": 20.9,
                 "wind_dir": "SE",
-                "wind_speed_kmh": 17,
+                "wind_speed_kmh": 24,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1770057360.2259862
+                "build_timestamp": 1770074581.989432
             }
         },
         {
@@ -60,17 +60,17 @@
             },
             "properties": {
                 "station": "Greenbank",
-                "timestamp": "2026-02-03 04:00:00",
-                "timestamp_date": "2026-02-03T04:00:00+10:00",
+                "timestamp": "2026-02-03 09:00:00",
+                "timestamp_date": "2026-02-03T09:00:00+10:00",
                 "rainfall_mm": 0.2,
-                "humidity_%": 60,
-                "dew_point_C": 13.9,
-                "air_temp_C": 21.8,
-                "feels_like_C": 21.3,
-                "wind_dir": "SE",
-                "wind_speed_kmh": 9,
+                "humidity_%": 49,
+                "dew_point_C": 12.8,
+                "air_temp_C": 23.9,
+                "feels_like_C": 22.3,
+                "wind_dir": "SSE",
+                "wind_speed_kmh": 13,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1770057360.6642222
+                "build_timestamp": 1770074582.4830105
             }
         },
         {
@@ -94,7 +94,7 @@
                 "wind_dir": "NE",
                 "wind_speed_kmh": 6,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1770057361.111549
+                "build_timestamp": 1770074582.9711561
             }
         },
         {
@@ -108,17 +108,17 @@
             },
             "properties": {
                 "station": "Brisbane",
-                "timestamp": "2026-02-03 04:00:00",
-                "timestamp_date": "2026-02-03T04:00:00+10:00",
+                "timestamp": "2026-02-03 09:00:00",
+                "timestamp_date": "2026-02-03T09:00:00+10:00",
                 "rainfall_mm": 0.0,
-                "humidity_%": 61,
-                "dew_point_C": 14.4,
-                "air_temp_C": 22.3,
-                "feels_like_C": 20.9,
+                "humidity_%": 53,
+                "dew_point_C": 13.6,
+                "air_temp_C": 23.7,
+                "feels_like_C": 22.8,
                 "wind_dir": "SE",
-                "wind_speed_kmh": 15,
+                "wind_speed_kmh": 11,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1770057361.7740304
+                "build_timestamp": 1770074583.3936942
             }
         }
     ]
