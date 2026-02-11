@@ -12,17 +12,17 @@
             },
             "properties": {
                 "station": "Canungra",
-                "timestamp": "2026-02-12 07:00:00",
-                "timestamp_date": "2026-02-12T07:00:00+10:00",
+                "timestamp": "2026-02-12 07:30:00",
+                "timestamp_date": "2026-02-12T07:30:00+10:00",
                 "rainfall_mm": 0.0,
-                "humidity_%": 99,
-                "dew_point_C": 22.6,
-                "air_temp_C": 22.8,
-                "feels_like_C": 27.5,
-                "wind_dir": "NE",
-                "wind_speed_kmh": 2,
+                "humidity_%": 98,
+                "dew_point_C": 24.0,
+                "air_temp_C": 24.3,
+                "feels_like_C": 30.1,
+                "wind_dir": "CALM",
+                "wind_speed_kmh": 0,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1770845363.2803714
+                "build_timestamp": 1770847211.7663596
             }
         },
         {
@@ -36,17 +36,17 @@
             },
             "properties": {
                 "station": "Greenbank",
-                "timestamp": "2026-02-12 07:00:00",
-                "timestamp_date": "2026-02-12T07:00:00+10:00",
+                "timestamp": "2026-02-12 07:30:00",
+                "timestamp_date": "2026-02-12T07:30:00+10:00",
                 "rainfall_mm": 0.0,
-                "humidity_%": 92,
-                "dew_point_C": 22.7,
-                "air_temp_C": 24.1,
-                "feels_like_C": 29.2,
+                "humidity_%": 82,
+                "dew_point_C": 22.6,
+                "air_temp_C": 25.9,
+                "feels_like_C": 31.0,
                 "wind_dir": "CALM",
                 "wind_speed_kmh": 0,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1770845364.6117685
+                "build_timestamp": 1770847212.7989426
             }
         },
         {
@@ -60,17 +60,17 @@
             },
             "properties": {
                 "station": "Brisbane",
-                "timestamp": "2026-02-12 07:00:00",
-                "timestamp_date": "2026-02-12T07:00:00+10:00",
+                "timestamp": "2026-02-12 07:30:00",
+                "timestamp_date": "2026-02-12T07:30:00+10:00",
                 "rainfall_mm": 0.0,
-                "humidity_%": 78,
-                "dew_point_C": 22.1,
-                "air_temp_C": 26.2,
-                "feels_like_C": 30.6,
-                "wind_dir": "NNW",
+                "humidity_%": 72,
+                "dew_point_C": 21.8,
+                "air_temp_C": 27.3,
+                "feels_like_C": 31.5,
+                "wind_dir": "ENE",
                 "wind_speed_kmh": 2,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1770845365.6703708
+                "build_timestamp": 1770847213.97544
             }
         }
     ]
