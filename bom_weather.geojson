@@ -12,17 +12,17 @@
             },
             "properties": {
                 "station": "Canungra",
-                "timestamp": "2026-03-04 09:30:00",
-                "timestamp_date": "2026-03-04T09:30:00+10:00",
+                "timestamp": "2026-03-04 11:30:00",
+                "timestamp_date": "2026-03-04T11:30:00+10:00",
                 "rainfall_mm": 0.0,
-                "humidity_%": 67,
-                "dew_point_C": 19.8,
-                "air_temp_C": 26.4,
-                "feels_like_C": 28.9,
-                "wind_dir": "ESE",
+                "humidity_%": 57,
+                "dew_point_C": 18.6,
+                "air_temp_C": 27.9,
+                "feels_like_C": 29.8,
+                "wind_dir": "NE",
                 "wind_speed_kmh": 6,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1772581687.3703396
+                "build_timestamp": 1772588506.4996138
             }
         },
         {
@@ -36,17 +36,17 @@
             },
             "properties": {
                 "station": "Amberley",
-                "timestamp": "2026-03-04 09:30:00",
-                "timestamp_date": "2026-03-04T09:30:00+10:00",
+                "timestamp": "2026-03-04 11:00:00",
+                "timestamp_date": "2026-03-04T11:00:00+10:00",
                 "rainfall_mm": 0.0,
-                "humidity_%": 71,
-                "dew_point_C": 20.5,
-                "air_temp_C": 26.2,
-                "feels_like_C": 28.4,
-                "wind_dir": "S",
-                "wind_speed_kmh": 9,
+                "humidity_%": 56,
+                "dew_point_C": 18.4,
+                "air_temp_C": 28.0,
+                "feels_like_C": 28.9,
+                "wind_dir": "E",
+                "wind_speed_kmh": 11,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1772581687.784045
+                "build_timestamp": 1772588506.9973087
             }
         },
         {
@@ -60,41 +60,17 @@
             },
             "properties": {
                 "station": "Greenbank",
-                "timestamp": "2026-03-04 09:30:00",
-                "timestamp_date": "2026-03-04T09:30:00+10:00",
+                "timestamp": "2026-03-04 11:30:00",
+                "timestamp_date": "2026-03-04T11:30:00+10:00",
                 "rainfall_mm": 0.2,
-                "humidity_%": 73,
-                "dew_point_C": 20.7,
-                "air_temp_C": 25.9,
-                "feels_like_C": 29.2,
-                "wind_dir": "SE",
-                "wind_speed_kmh": 4,
+                "humidity_%": 51,
+                "dew_point_C": 17.3,
+                "air_temp_C": 28.4,
+                "feels_like_C": 28.8,
+                "wind_dir": "ESE",
+                "wind_speed_kmh": 11,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1772581688.2734323
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    153.0,
-                    -25.9
-                ]
-            },
-            "properties": {
-                "station": "Tin Can Bay",
-                "timestamp": "2026-03-04 09:00:00",
-                "timestamp_date": "2026-03-04T09:00:00+10:00",
-                "rainfall_mm": 0.8,
-                "humidity_%": 74,
-                "dew_point_C": 20.2,
-                "air_temp_C": 25.2,
-                "feels_like_C": 27.7,
-                "wind_dir": "SSE",
-                "wind_speed_kmh": 7,
-                "wind_gust_kmh": null,
-                "build_timestamp": 1772581688.9322004
+                "build_timestamp": 1772588507.5329738
             }
         },
         {
@@ -108,17 +84,17 @@
             },
             "properties": {
                 "station": "Brisbane",
-                "timestamp": "2026-03-04 09:30:00",
-                "timestamp_date": "2026-03-04T09:30:00+10:00",
+                "timestamp": "2026-03-04 11:30:00",
+                "timestamp_date": "2026-03-04T11:30:00+10:00",
                 "rainfall_mm": 0.0,
-                "humidity_%": 61,
-                "dew_point_C": 20.1,
-                "air_temp_C": 28.1,
-                "feels_like_C": 31.1,
-                "wind_dir": "ENE",
-                "wind_speed_kmh": 4,
+                "humidity_%": 51,
+                "dew_point_C": 17.5,
+                "air_temp_C": 28.6,
+                "feels_like_C": 29.1,
+                "wind_dir": "NE",
+                "wind_speed_kmh": 11,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1772581689.372268
+                "build_timestamp": 1772588508.8460598
             }
         }
     ]
