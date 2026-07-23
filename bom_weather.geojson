@@ -12,17 +12,41 @@
             },
             "properties": {
                 "station": "Canungra",
-                "timestamp": "2026-07-24 06:00:00",
-                "timestamp_date": "2026-07-24T06:00:00+10:00",
+                "timestamp": "2026-07-24 07:00:00",
+                "timestamp_date": "2026-07-24T07:00:00+10:00",
                 "rainfall_mm": 0.2,
                 "humidity_%": 100,
-                "dew_point_C": 6.1,
-                "air_temp_C": 6.1,
-                "feels_like_C": 5.2,
+                "dew_point_C": 5.6,
+                "air_temp_C": 5.6,
+                "feels_like_C": 4.6,
                 "wind_dir": "CALM",
                 "wind_speed_kmh": 0,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1784837328.4217134
+                "build_timestamp": 1784842417.4587288
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    152.7,
+                    -27.6
+                ]
+            },
+            "properties": {
+                "station": "Amberley",
+                "timestamp": "2026-07-24 07:00:00",
+                "timestamp_date": "2026-07-24T07:00:00+10:00",
+                "rainfall_mm": 0.0,
+                "humidity_%": 100,
+                "dew_point_C": 3.3,
+                "air_temp_C": 3.3,
+                "feels_like_C": 1.9,
+                "wind_dir": "CALM",
+                "wind_speed_kmh": 0,
+                "wind_gust_kmh": null,
+                "build_timestamp": 1784842418.3919504
             }
         },
         {
@@ -36,17 +60,17 @@
             },
             "properties": {
                 "station": "Tin Can Bay",
-                "timestamp": "2026-07-24 06:00:00",
-                "timestamp_date": "2026-07-24T06:00:00+10:00",
+                "timestamp": "2026-07-24 07:00:00",
+                "timestamp_date": "2026-07-24T07:00:00+10:00",
                 "rainfall_mm": 0.0,
-                "humidity_%": 92,
+                "humidity_%": 84,
                 "dew_point_C": 9.7,
-                "air_temp_C": 10.9,
-                "feels_like_C": 10.5,
+                "air_temp_C": 12.3,
+                "feels_like_C": 11.1,
                 "wind_dir": "S",
-                "wind_speed_kmh": 2,
+                "wind_speed_kmh": 6,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1784837329.974535
+                "build_timestamp": 1784842419.4182584
             }
         },
         {
@@ -60,17 +84,17 @@
             },
             "properties": {
                 "station": "Brisbane",
-                "timestamp": "2026-07-24 06:00:00",
-                "timestamp_date": "2026-07-24T06:00:00+10:00",
+                "timestamp": "2026-07-24 07:00:00",
+                "timestamp_date": "2026-07-24T07:00:00+10:00",
                 "rainfall_mm": 0.2,
-                "humidity_%": 89,
-                "dew_point_C": 9.5,
-                "air_temp_C": 11.2,
-                "feels_like_C": 10.0,
-                "wind_dir": "SW",
-                "wind_speed_kmh": 6,
+                "humidity_%": 85,
+                "dew_point_C": 8.7,
+                "air_temp_C": 11.1,
+                "feels_like_C": 10.1,
+                "wind_dir": "SSW",
+                "wind_speed_kmh": 4,
                 "wind_gust_kmh": null,
-                "build_timestamp": 1784837330.3725328
+                "build_timestamp": 1784842420.0352442
             }
         }
     ]
